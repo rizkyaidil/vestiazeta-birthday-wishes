@@ -1,0 +1,152 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: url('images/CATS-BACKGROUND.jpeg');
+  background-size: cover;
+  max-width: 1vw;
+  max-height: 1vh;
+}
+
+/* Hastag */
+a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.card-tweet {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  cursor: pointer;
+  user-select: none;
+  transform: translate(-50%, -50%) translateZ(0);
+}
+
+.card-video {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-header {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.card-header .user {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.card-header .twitter-logo{
+  width: 20px; 
+  height: 20px;
+  color: #536471; 
+  fill: currentColor; 
+}
+
+.user .user-img {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+}
+
+.user .user-info {
+  margin-left: 12px; 
+  font-size: 15px;
+  line-height: 20px; 
+}
+
+.user-info .name {
+  display: block;
+  font-weight: 700; 
+  color: #0f1419;
+}
+
+.user-info .username {
+  display: block; 
+  font-weight: 400; 
+  color: #536471; 
+}
+
+.card .tweet {
+  display: block; 
+  margin-top: 14px; 
+  color: #0f1419; 
+  font-size: 17px;
+  line-height: 24px; 
+}
+
+.card .tweet-img {
+  margin-top: 8px;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+}
+
+.card .tweet-video {
+  margin-top: 8px;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+}
+
+.card .tweet-audio {
+  margin-top: 8px;
+  padding-right: 16px;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+}
+
+.card .tweet-time {
+  margin-top: 12px;
+  margin-bottom: 12px; 
+  color: #536471; 
+  font-size: 15px;
+  line-height: 20px; 
+}
+
+.card .tweet-icon {
+  display: flex; 
+  margin-top: 12px; 
+  color: #536471;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .tweet-icon svg {
+  width: auto;
+  height: 24px; 
+  fill: currentColor; 
+}
